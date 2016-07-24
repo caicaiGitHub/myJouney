@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+    <title>404页面</title>
+    <meta name="keywords" content="乐途旅游,旅游,旅游网,目的地指南,旅游资讯。 ">
+    <meta name="description" content="乐途旅游网—中国领先的旅游目的地媒体。乐途旅游，用全球7万个旅游目的地，款待千万驴友每一颗说走就走的心。给你好看！陪你好玩！从你的喜悦出发，为你的感动抵达！ 让我们一起旅游吧，精彩旅游，尽在乐途。">
+    <link rel="shortcut icon" href="http://www.lotour.com/favicon2.ico" />
+    <style type="text/css">
+        body
+        {
+            margin: 0;
+            padding: 0;
+            background: #f0ba34;
+        }
+        .yemian
+        {
+            height: 941px;
+            margin: 0 auto;
+            background: url(http://img1.lotour.com/404/yamian-bg.jpg) no-repeat center 0;
+        }
+        .ym-main
+        {
+            width: 980px;
+            height: 941px;
+            margin: 0 auto;
+            position: relative;
+        }
+        .banner2
+        {
+            width: 980px;
+            height: 305px;
+            background: url(http://img1.lotour.com/404/yamian-2.jpg) no-repeat center 0;
+            position: relative;
+        }
+        .banner2 a
+        {
+            display: block;
+            position: absolute;
+            left: 151px;
+        }
+        .banner2 a.mudidi
+        {
+            width: 260px;
+            height: 80px;
+            top: 14px;
+        }
+        .banner2 a.daka
+        {
+            width: 214px;
+            height: 85px;
+            top: 114px;
+        }
+        .banner2 a.index
+        {
+            width: 205px;
+            height: 80px;
+            top: 226px;
+        }
+        .ym-main img
+        {
+            display: block;
+            margin: 0 auto;
+        }
+        .tip-404
+        {
+            position: absolute;
+            top: 320px;
+            left: 63%;
+            width: 563px;
+            height: 173px;
+            margin-top: -130px;
+            margin-left: -281px;
+        }
+        .tip-404 p
+        {
+            margin: 0;
+            padding: 80px 0 0 193px;
+            color: #ec6909;
+            font-size: 20px;
+            font-weight: bold;
+        }
+    </style>
+    <script language="javascript">
+        var c = 10;
+        var t;
+        function goUrl() {
+            document.getElementById("time").innerHTML = c;
+            t = setTimeout("goUrl()", 1000);
+            c -= 1;
+            if (c == 0) {
+                location.href = "http://www.lotour.com/";
+            }
+        }
+
+        window.onload = goUrl;
+    </script>
+</head>
+<body>
+    <div class="yemian">
+        <div class="ym-main">
+            <img src="http://img1.lotour.com/404/yamian-1.jpg" width="980" height="256" alt="" />
+            <div class="banner2">
+                <a class="mudidi" onfocus="this.blur()" href="http://www.lotour.com/mudidi/" target="_blank"></a>
+                <a class="daka" onfocus="this.blur()" href="http://www.lotour.com/daren/" target="_blank"></a><a
+                    class="index" onfocus="this.blur()" href="http://www.lotour.com/" target="_blank"></a>
+            </div>
+            <img src="http://img1.lotour.com/404/yamian-3.jpg" width="980" height="380" alt="" />
+            <div class="tip-404">
+                <p>
+                    <span id="time"></span>秒后带您去首页！</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

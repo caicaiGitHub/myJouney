@@ -1,0 +1,5 @@
+﻿文件下载网址  =>  文件保存路径
+about:blank  =>  E:\img\look\单页扒站小工具\www.lotour.com\images\d3c51736492f4d5d906b92e3e3beda6c.gif
+http://img1.lotour.net/mylotourV2/jf_lebi2.png  =>  E:\img\look\单页扒站小工具\www.lotour.com\images\jf_lebi2.png
+http://img1.lotour.net/mylotourV2/jf_exp.png  =>  E:\img\look\单页扒站小工具\www.lotour.com\images\jf_exp.png
+http://img1.lotour.net/mylotourV2/jf_lebi.png  =>  E:\img\look\单页扒站小工具\www.lotour.com\images\jf_lebi.png

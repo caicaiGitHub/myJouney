@@ -1,0 +1,161 @@
+.zylshop {
+    width: 1000px;
+    /*height: 800px;*/
+    margin: 0 auto;
+    margin-top: 60px;
+    /*border: 1px solid #ccc;*/
+}
+.zylshop_top_left h3{
+    line-height: 50px;
+    display: inline-block;
+    color: #FB6720;
+    font-size: 20px;
+    font-weight: 800;
+    margin: 0 10px;
+}
+.zylshop_top_left h3 span {
+    font-size: 14px;
+    color: #999;
+}
+.zylshop_top {
+    position: relative;
+    height: 50px;
+    border-bottom: 1px solid #ccc;
+}
+.zylshop_top_right {
+    width: 100px;
+    height: 50px;
+}
+.zylshop_top_right i {
+    position: absolute;
+    top: 20px;
+    right: 100px;
+    width: 14px;
+    height: 14px;
+    background: url("../images/change.png") no-repeat;
+}
+.zylshop_top_right a {
+    font-size: 14px;
+    line-height: 50px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.zylshop_bottom {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    position: relative;
+    width: 1200px;
+    overflow: hidden;
+
+}
+.zylshop_bottom_left{
+    width: 238px;
+    height: 234px;
+    margin-left: 5px;
+    overflow: hidden;
+}
+.zylshop_bottom_left img {
+    opacity: 0.8;
+    width: 238px;
+}
+.zylshop_bottom_left i {
+    width: 118px;
+    line-height: 131px;
+    text-align: center;
+    background: url("../images/q-hexagon.png") no-repeat;
+    position: absolute;
+    top: 15%;
+    left: 5%;
+    color: white;
+    font-size: 14px;
+    font-weight: 800;
+    /*opacity: 1;*/
+}
+.zylshop_bottom_left span {
+    position: absolute;
+    opacity: 1;
+}
+.zylshop_bottom_left i span {
+    border-bottom: 1px solid white;
+}
+.zylbtom {
+    width: 238px;
+    height: 60px;
+    position: absolute;
+    bottom: 0;
+    background-color: #ff4000;
+    color: white;
+    font-size: 16px;
+    text-align: center;
+    line-height: 60px;
+    display: none;
+    opacity: 0.8;
+}
+
+.zy_nav_con_right {
+    height: 234px;
+    float:left;
+}
+.zy_nav_con_right ul {
+    width: 845px;
+    /*height: 516px;*/
+    display: none;
+}
+.zy_nav_con_right .zy_nav_con_right_pic1 {
+    display: block;
+}
+.zy_nav_con_right li {
+    float:left;
+    width: 250px;
+    height: 243px;
+    margin-left: 5px;
+    cursor: pointer;
+    position: relative;
+}
+.zy_nav_con_right_li span img {
+    width: 82px;
+    height: 25px;
+    position: absolute;
+    top: 0;
+    left: -5px;
+}
+.zy_nav_con_right img {
+    width: 238px;
+    height: 134px;
+}
+.zy_nav_con_right h3 {
+    height: 40px;
+    /*width: 264px;*/
+    overflow: hidden;
+    line-height: 20px;
+    font-size: 13px;
+    font-weight: 400;
+    margin: 5px 0 10px;
+    padding: 0 5px;
+    background-color: #fff;
+    position:absolute;
+    bottom: 30px;
+}
+
+.zy_nav_con_right .price  {
+    display: inline-block;
+    width: 84px;
+    height: 30px;
+    text-align: center;
+    line-height: 26px;
+    color: #ff8a00;
+    font-size: 14px;
+    font-weight: 400;
+    position: absolute;
+    bottom: 5px;
+}
+.price i {
+    font-size: 22px;
+    font-weight: 800;
+}
+.zy_nav_con_right  s{
+    position: absolute;
+    bottom: 10px;
+    left:85px;
+    font-size: 14px;
+}

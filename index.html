@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>世界那么大 只想来这里</title>
+    <link rel="shutcut icon" href="favicon.ico"/>
+    <link rel="stylesheet" href="css/basedr.css"/>
+    <link rel="stylesheet" href="css/base.css"/>
+    <link rel="stylesheet" href="css/dr-index.css"/>
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="js/dr_js.js"></script>
+    <script src="js/base.js"></script>
+    <script type="text/javascript">
+        //banner
+        window.onload = function(){
+            dr_ban(600,3000);
+
+            //search
+            var ser_txt = document.getElementById("ser_txt");
+            ser_txt.onfocus = function(){   //onfocus 获取焦点
+                if(ser_txt.value == "搜目的地/攻略/酒店/用户"){
+                    ser_txt.value = "";
+                    ser_txt.style.color = "#333";
+                };
+            }
+
+            ser_txt.onblur = function(){ //onblur 失去焦点
+                if(ser_txt.value == ""){
+                    ser_txt.value = "搜目的地/攻略/酒店/用户"
+                    ser_txt.style.color = "#999";
+                }
+            }
+
+        }
+    </script>
+</head>
+<body>
+<audio src="music.mp3" autoplay loop></audio>
+<div class="all">
+    <div class="site-nav fl ">
+        <div class="w">
+            <div class="fl site-nav-logo">
+                <a href="#" title="www.journey.com">这里 www.journey.com
+                </a>
+            </div>
+            <ul class="site-nav-list fl" id="j_nav_list">
+                <li class="current"><a href="index.html">首页</a></li>
+                <li class="icon" id="j_nav_liset_icon">
+                    <a href="#">发现
+                        <i><s>◇</s></i>
+                    </a>
+                    <div>
+                        <span><a href="details/wd.html">周边游</a></span>
+                        <span><a href="#">国内游</a></span>
+                        <span><a href="#">出境游</a></span>
+                    </div>
+                </li>
+                <li class=""><a href="details/shangcheng.html">这里商城</a></li>
+                <li><a href="details/leil.html">大咖</a></li>
+                <li><a href="#">预订</a></li>
+            </ul>
+            <div class="fr site-nav-right">
+                <span ><input type="text" placeholder="好山好水品好茶"/></span>
+            <span>
+                <i class="site-nav-weibo"></i>
+            </span>
+            <span>
+                <i class="site-nav-qq"></i>
+            </span>
+                <span class="site-nav-register"><a href="#">注册</a></span>
+                <span>|</span>
+                <span class="site-nav-login"><a href="#">登录</a></span>
+            </div>
+        </div>
+    </div>
+
+        <!-- banner -->
+        <div class="dr_banner_all clearfix">
+            <div class="banner_show">
+                <div id="dr_ban">
+                    <ul class="tuul">
+                        <li class="no1"><a href="#"><img src="images/banner1.jpeg" /></a></li>
+                        <li><a href="#"><img src="images/banner2.jpeg" /></a></li>
+                        <li><a href="#"><img src="images/banner3.jpeg" /></a></li>
+                        <li><a href="#"><img src="images/banner4.jpeg" /></a></li>
+                        <li><a href="#"><img src="images/banner5.jpeg" /></a></li>
+                    </ul>
+                    <div class="anniu">
+                        <span class="leftbut"></span>
+                        <span class="rightbut"></span>
+                    </div>
+                    <ul class="dianul">
+                        <li class="cur"><img src="images/banner1_m.jpeg" alt=""/></li>
+                        <li><img src="images/banner2_m.jpeg" alt=""/></li>
+                        <li><img src="images/banner3_m.jpeg" alt=""/></li>
+                        <li><img src="images/banner4_m.jpeg" alt=""/></li>
+                        <li><img src="images/banner5_m.jpeg" alt=""/></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="search_all">
+                <div class="search-top">
+                    <ul class="xuanzhe">
+                        <li class="cur"><i></i>全部</li>
+                        <li><i></i>酒店</li>
+                        <li><i></i>目的地</li>
+                        <li><i></i>商城</li>
+                    </ul>
+
+                    <div class="search">
+                        <input type="text" id="ser_txt" value="搜目的地/攻略/酒店/用户"/>
+                        <a href="javascript:;"><i></i></a>
+                    </div>
+                </div>
+                <p class="jianjie">图片来<span class="col-ye ">自于尼泊尔</span>，此目的地共收藏了<span class="col-ye ">643707</span>张<span class="col-ye ">尼泊尔</span>图片。本片由<span class="col-ye">温城</span>荣誉出品！</p>
+            </div>
+        </div>
+
+
+
+    <!-- 第二部分-->
+    <div class="two_all clearfix">
+        <!-- tab-left-->
+        <div class="tab-left">
+            <div class="yangguang">
+                <ul class="yg-show">
+                    <li>
+                        <img src="images/xz-ico1.png" alt=""/>
+                        <span>阳光行程</span>
+                    </li>
+                    <li>
+                        <img src="images/xz-ico2.png" alt=""/>
+                        <span>阳光价格</span>
+                    </li>
+                    <li>
+                        <img src="images/xz-ico3.png" alt=""/>
+                        <span>阳光服务</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="tab-show tab-zs" id="tab-zs">
+                <div class="tab-tit">
+                    <span class="cur">自由行</span><span class="jipiao">机票<i></i></span><span class="jipiao">酒店<i></i></span><span class="huoche">火车票</span>
+                </div>
+                <div class="tab-bottom">
+                    <div class="tab-b01 tab-block ziyou">
+                        <div class="leixing clearfix">
+                            <p class="input"><input type="radio"/><span>机票+酒店</span></p><p><input type="radio"/><span>机票+酒店</span></p>
+                        </div>
+                        <p class="input"><label>出发地：</label><input class="text" type="text" placeholder="北京"/></p>
+                        <p class="input"><label>目的地：</label><input class="text"  type="text" placeholder="天津"/></p>
+                        <p class="input"><label>出发时间：</label><input class="text"  type="text" placeholder="2015-12-24"/></p>
+                        <p class="input"><label>返回时间：</label><input class="text"  type="text" placeholder="2015-12-30"/></p>
+                        <p class="input renqun"><label>成人：</label><input class="text"  type="text"/><label class="ertong">儿童:</label> <input class="text"  type="text"/></p>
+                        <p class="input"><button>开始制定</button></p>
+                    </div>
+                    <div class="tab-b01 tab-block ziyou">
+                        <div class="leixing clearfix">
+                            <p class="input"><input type="radio"/><span>国内机票</span></p>
+                        </div>
+                        <p class="input"><label>出发地：</label><input class="text" type="text" placeholder="北京"/></p>
+                        <p class="input"><label>目的地：</label><input class="text"  type="text" placeholder="上海"/></p>
+                        <p class="input"><label>出发时间：</label><input class="text"  type="text" placeholder="2015-12-23"/></p>
+                        <p class="input renqun"><label>成人：</label><input class="text"  type="text"/><label class="ertong">儿童:</label> <input class="text"  type="text"/></p>
+                        <p class="input"><button>开始制定</button></p>
+                    </div>
+                    <div class="tab-b01 tab-block ziyou">
+                        <div class="leixing clearfix">
+                            <p class="input"><input type="radio"/><span>国内酒店</span></p><p><input type="radio"/><span>国际酒店</span></p>
+                        </div>
+                        <p class="input"><label>入住城市：</label><input class="text" type="text" placeholder="北京"/></p>
+                        <p class="input"><label>关键词：</label><input class="text"  type="text" placeholder="关键词"/></p>
+                        <p class="input"><label>入住时间：</label><input class="text"  type="text" placeholder="2015-12-22"/></p>
+                        <p class="input"><label>离店时间：</label><input class="text"  type="text" placeholder="2015-12-27"/></p>
+                        <p class="input lidian">*离店时间不得小于入住时间</p>
+                        <p class="input"><button>开始制定</button></p>
+                    </div>
+                    <div class="tab-b01 tab-block ziyou huoche">
+                        <p class="input"><label>出发站：</label><input class="text" type="text" placeholder="北京"/></p>
+                        <p class="input"><label>到达站：</label><input class="text"  type="text" placeholder="南京"/></p>
+                        <p class="input"><label>出发时间：</label><input class="text"  type="text" placeholder="2015-12-27"/></p>
+                        <p class="input chexing"><input type="checkbox"/>仅搜高铁和动车</p>
+                        <p class="input"><button>开始制定</button></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 图片翻转-->
+        <div class="fanzhuan">
+            <div class="fz_list fz_list1">
+                <div class="yellow_box">
+                    <p class="xingcheng">"想一个人，去看海？"</p>
+                    <p >董瑞 18岁</p>
+                </div>
+            </div>
+            <div class="fz_list fz_list2">
+                <div class="yellow_box">
+                    <p class="xingcheng">"9月去欧洲，有同行的么？"</p>
+                    <p >朱银莉 18岁</p>
+                </div>
+            </div>
+            <div class="fz_list fz_list1">
+                <div class="yellow_box">
+                    <p class="xingcheng">"来一次说走就走的旅行！！！"</p>
+                    <p >姚陈 18岁</p>
+                </div>
+            </div>
+            <div class="fz_list fz_list2">
+                <div class="yellow_box">
+                    <p class="xingcheng">"9月去欧洲，有同行的么？"</p>
+                    <p >张世伟 18岁</p>
+                </div>
+            </div>
+            <div class="fz_list fz_list1">
+                <div class="yellow_box">
+                    <p class="xingcheng">"9月去欧洲，有同行的么？"</p>
+                    <p >李江 18岁</p>
+                </div>
+            </div>
+            <div class="fz_list fz_list2">
+                <div class="yellow_box ">
+                    <p class="xingcheng">"9月去欧洲，有同行的么？"</p>
+                    <p >黄雷雷 18岁</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 第三部分 -->
+    <div class="three clearfix">
+        <!-- 左边 -->
+        <div class="drleft-center">
+            <h4 class="dr-rexiao">热销排行榜</h4>
+            <div class="three-l">
+                <div class="three-l tab-show" id="three-l">
+                    <div class="tab-tit">
+                        <span class="cur">出境</span><span class="jipiao">国内<i></i></span><span class="huoche">周边</span>
+                    </div>
+                    <div class="three-tab tab-bottom">
+                        <div class="tab-b01  tab-block ziyou">
+                            <dl class="three-tab-dl">
+                                <dt><img src="images/cj-ico1.jpg" alt=""/></dt>
+                                <dd>
+                                    <p>[春节]<首尔5日游></p>
+                                    <p class="colp">出娜姐发酵发卡量分开发</p>
+                                    <span>￥3023</span>
+                                </dd>
+                            </dl>
+                            <dl class="three-tab-dl">
+                                <dt><img src="images/cj-ico2.jpg" alt=""/></dt>
+                                <dd>
+                                    <p>出娜姐发酵发卡量分开发</p>
+                                    <p class="colp">出娜姐发酵发卡量分开发</p>
+                                    <span>￥3023</span>
+                                </dd>
+                            </dl>
+                            <dl class="three-tab-dl">
+                                <dt><img src="images/cj-ico3.jpg" alt=""/></dt>
+                                <dd>
+                                    <p>出娜姐发酵发卡量分开发</p>
+                                    <p class="colp">出娜姐发酵发卡量分开发</p>
+                                    <span>￥3023</span>
+                                </dd>
+                            </dl>
+                            <dl class="three-tab-dl">
+                                <dt><img src="images/cj-ico4.jpg" alt=""/></dt>
+                                <dd>
+                                    <p>出娜姐发酵发卡量分开发</p>
+                                    <p class="colp">出娜姐发酵发卡量分开发</p>
+                                    <span>￥3023</span>
+                                </dd>
+                            </dl>
+                            <dl class="three-tab-dl">
+                                <dt><img src="images/cj-ico5.jpg" alt=""/></dt>
+                                <dd>
+                                    <p>出娜姐发酵发卡量分开发</p>
+                                    <p class="colp">出娜姐发酵发卡量分开发</p>
+                                    <span>￥3023</span>
+                                </dd>
+                            </dl>
+                        </div>
+                        <div class="tab-b01  tab-block ziyou">
+                            <dl class="three-tab-dl">
+                                <dt><img src="images/cj-ico1.jpg" alt=""/></dt>
+                                <dd>
+                                    <p>出娜姐发酵发卡量分开发</p>
+                                    <p class="colp">出娜姐发酵发卡量分开发</p>
+                                    <span>￥3422</span>
+                                </dd>
+                            </dl>
+                            <dl class="three-tab-dl">
+                                <dt><img src="images/cj-ico2.jpg" alt=""/></dt>
+                                <dd>
+                                    <p>出娜姐发酵发卡量分开发</p>
+                                    <p class="colp">出娜姐发酵发卡量分开发</p>
+                                    <span>￥3023</span>
+                                </dd>
+                            </dl>
+                            <dl class="three-tab-dl">
+                                <dt><img src="images/cj-ico3.jpg" alt=""/></dt>
+                                <dd>
+                                    <p>出娜姐发酵发卡量分开发</p>
+                                    <p class="colp">出娜姐发酵发卡量分开发</p>
+                                    <span>￥3023</span>
+                                </dd>
+                            </dl>
+                            <dl class="three-tab-dl">
+                                <dt><img src="images/cj-ico4.jpg" alt=""/></dt>
+                                <dd>
+                                    <p>出娜姐发酵发卡量分开发</p>
+                                    <p class="colp">出娜姐发酵发卡量分开发</p>
+                                    <span>￥3023</span>
+                                </dd>
+                            </dl>
+                            <dl class="three-tab-dl">
+                                <dt><img src="images/cj-ico5.jpg" alt=""/></dt>
+                                <dd>
+                                    <p>出娜姐发酵发卡量分开发</p>
+                                    <p class="colp">出娜姐发酵发卡量分开发</p>
+                                    <span>￥3023</span>
+                                </dd>
+                            </dl>
+                            <dl class="three-tab-dl">
+                                <dt><img src="images/cj-ico1.jpg" alt=""/></dt>
+                                <dd>
+                                    <p>出娜姐发酵发卡量分开发</p>
+                                    <p>出娜姐发酵发卡量分开发</p>
+                                    <span>￥3023</span>
+                                </dd>
+                            </dl>
+                            <dl class="three-tab-dl">
+                                <dt><img src="images/cj-ico1.jpg" alt=""/></dt>
+                                <dd>
+                                    <p>出娜姐发酵发卡量分开发</p>
+                                    <p class="colp">出娜姐发酵发卡量分开发</p>
+                                    <span>￥3422</span>
+                                </dd>
+                            </dl>
+                            <dl class="three-tab-dl">
+                                <dt><img src="images/cj-ico1.jpg" alt=""/></dt>
+                                <dd>
+                                    <p>出娜姐发酵发卡量分开发</p>
+                                    <p class="colp">出娜姐发酵发卡量分开发</p>
+                                    <span>￥3023</span>
+                                </dd>
+                            </dl>
+                            <dl class="three-tab-dl">
+                                <dt><img src="images/cj-ico1.jpg" alt=""/></dt>
+                                <dd>
+                                    <p>出娜姐发酵发卡量分开发</p>
+                                    <p class="colp">出娜姐发酵发卡量分开发</p>
+                                    <span>￥3023</span>
+                                </dd>
+                            </dl>
+                            <dl class="three-tab-dl">
+                                <dt><img src="images/cj-ico1.jpg" alt=""/></dt>
+                                <dd>
+                                    <p>出娜姐发酵发卡量分开发</p>
+                                    <p class="colp">出娜姐发酵发卡量分开发</p>
+                                    <span>￥3023</span>
+                                </dd>
+                            </dl>
+                            <dl class="three-tab-dl">
+                            <dl class="three-tab-dl">
+                                <dt><img src="images/cj-ico1.jpg" alt=""/></dt>
+                                <dd>
+                                    <p>出娜姐发酵发卡量分开发</p>
+                                    <p>出娜姐发酵发卡量分开发</p>
+                                    <span>￥3023</span>
+                                </dd>
+                            </dl>
+                        </div>
+                        <div class="tab-b01  tab-block ziyou">
+                            <dl class="three-tab-dl">
+                                <dt><img src="images/cj-ico1.jpg" alt=""/></dt>
+                                <dd>
+                                    <p>出娜姐发酵发卡量分开发</p>
+                                    <p class="colp">出娜姐发酵发卡量分开发</p>
+                                    <span>￥1222</span>
+                                </dd>
+                            </dl>
+                            <dl class="three-tab-dl">
+                                <dt><img src="images/cj-ico2.jpg" alt=""/></dt>
+                                <dd>
+                                    <p>出娜姐发酵发卡量分开发</p>
+                                    <p class="colp">出娜姐发酵发卡量分开发</p>
+                                    <span>￥3023</span>
+                                </dd>
+                            </dl>
+                            <dl class="three-tab-dl">
+                                <dt><img src="images/cj-ico3.jpg" alt=""/></dt>
+                                <dd>
+                                    <p>出娜姐发酵发卡量分开发</p>
+                                    <p class="colp">出娜姐发酵发卡量分开发</p>
+                                    <span>￥3023</span>
+                                </dd>
+                            </dl>
+                            <dl class="three-tab-dl">
+                                <dt><img src="images/cj-ico4.jpg" alt=""/></dt>
+                                <dd>
+                                    <p>出娜姐发酵发卡量分开发</p>
+                                    <p class="colp">出娜姐发酵发卡量分开发</p>
+                                    <span>￥3023</span>
+                                </dd>
+                            </dl>
+                            <dl class="three-tab-dl">
+                                <dt><img src="images/cj-ico5.jpg" alt=""/></dt>
+                                <dd>
+                                    <p>出娜姐发酵发卡量分开发</p>
+                                    <p class="colp">出娜姐发酵发卡量分开发</p>
+                                    <span>￥3023</span>
+                                </dd>
+                            </dl>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="drthree-b">
+                <span class="youdian">游点不一样☆一日大师</span>
+                <img src="images/z_4.jpg" alt=""/>
+                <div class="huodong">
+                    <div class="huodong-title">
+                        <span>我的活动</span>
+                        <p>正在进行</p>
+                    </div  >
+                    <div class="huodong-nav">
+                        <ul class="icon">
+                            <li class="icon1">
+                                <p class="huodong-left-h">彩虹味的夏威夷</p>
+                                <p>每天整点接彩虹豆，免费游夏威夷</p>
+                            </li>
+                            <li class="icon2">
+                                <p class="huodong-left-h">彩虹味的夏威夷</p>
+                                <p>每天整点接彩虹豆，免费游夏威夷</p>
+                            </li>
+                            <li class="icon3">
+                                <p class="huodong-left-h">彩虹味的夏威夷</p>
+                                <p>每天整点接彩虹豆，免费游夏威夷</p>
+                            </li>
+                            <li class="icon4">
+                                <p class="huodong-left-h">彩虹味的夏威夷</p>
+                                <p>每天整点接彩虹豆，免费游夏威夷</p>
+                            </li>
+                            <li class="icon5">
+                                <p class="huodong-left-h">彩虹味的夏威夷</p>
+                                <p>每天整点接彩虹豆，免费游夏威夷</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            </div>
+
+
+        <div class="tree-r">
+            <div class="content-right">
+                <div class="content-right-t">
+                    <div class="content-right-top">
+                        <p>今日爆款</p>
+                    </div>
+                    <div class="content-right-foot">
+                        <div class="content-right-foot1">
+                            <img src="images/todya-1.jpeg" alt=""/>
+                            <p>
+                                怪兽细品春城昆明——纪念四年大学时光
+                                【四季看花花不老，一江春月是 昆明】
+                            </p>
+                        </div>
+                        <div class="content-right-foot2">
+                            <img src="images/today2.jpeg" alt=""/>
+                            <p>
+                                【抢邀请码】熊孩子放养卡，限量发行，无线亲自活动
+                            </p>
+                        </div>
+                        <div class="content-right-foot3">
+                            <img src="images/todya-3.jpeg" alt=""/>
+                            <p>
+                                【元旦春节】北京包机直飞塞班岛5-7天自由行含早餐+往返接送。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="content-right-d">
+                    <div class="content-right-d-t">
+                        <ul>
+                            <li class="rmyj">热门游记</li>
+                            <li>最新发表</li>
+                            <li>精品游记</li>
+                        </ul>
+                        <span>写游记</span>
+                    </div>
+                    <div class="content-right-d-d">
+                        <div class="content-right-d-dl">
+                            <img src="images/001.JPG" alt=""/>
+                        </div>
+                        <div class="content-right-d-dr">
+                       <span>
+                           <p>一次说走就走的旅行--稻城亚丁</p>
+                           一片落叶渲染了秋色， 一季落花沧桑了流年。 这个秋天你正和谁走过， 你还是这个季节的回憶。 只是你不在参与， 在一个地方生活的太久， 常常弄丢了自己，一起丢掉的， 还有那最初的梦想与走出去的勇气！ 我爱做...
+                       </span>
+                            <div class="content-right-d-drd">
+                                <ul class="uldr">
+                                    <li><i></i>268 稻城</li>
+                                    <li class="i2"><i></i>by 奔波兒灞</li>
+                                    <li class="i3"><i></i>6695/166</li>
+                                </ul>
+                                <p>3889<span></span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content-right-d-d2">
+                        <div class="content-right-d-dl">
+                            <img src="images/002.JPG" alt=""/>
+                        </div>
+                        <div class="content-right-d-dr">
+                       <span>
+                           <p>川藏南线 青藏线行摄之旅</p>
+                           D1： 成都 —— 雅安 —— 海螺沟 D2： 海螺沟 —— 康定 —— 新都桥 D3： 新都桥 —— 雅江 —— 理塘 —— 稻城 D4： 稻城  —— 香格里拉 镇—— 亚丁 D5： 亚丁 一日游——返回 稻城 D6： 稻城 —— 梅里雪山...                       </span>
+                            <div class="content-right-d-drd">
+                                <ul class="uldr">
+                                    <li><i></i>川藏南线</li>
+                                    <li class="i2"><i></i>by  落文落文  </li>
+                                    <li class="i3"><i></i>50934/332</li>
+                                </ul>
+                                <p>5645<span></span></p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content-right-d-d3">
+                        <div class="content-right-d-dl">
+                            <img src="images/003.JPG" alt=""/>
+                        </div>
+                        <div class="content-right-d-dr">
+                       <span>
+                           <p>【厦门 ? 走一走【超多图——美景、美食、路线 】</p>
+                         我爱生活，却总琢磨着如何不被生活打倒； 爱旅行，但又少有几次自己的旅程。 自由职业者一枚。平时做点手作文创水晶串串，原创设计，欢迎关注。 微信：onlymol 微博： http://weibo.com/oulinmol 相...
+                       </span>
+                            <div class="content-right-d-drd">
+                                <ul class="uldr">
+                                    <li><i></i>4643 厦门，</li>
+                                    <li class="i2"><i></i>by  林若萌</li>
+                                    <li class="i3"><i></i>138257/912</li>
+                                </ul>
+                                <p>4279<span></span></p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content-right-d-d4">
+                        <div class="content-right-d-dl">
+                            <img src="images/004.jpeg" alt=""/>
+                        </div>
+                        <div class="content-right-d-dr">
+                       <span>
+
+                           <p>10天九晚的土耳其穷游豪华之旅。土国撒泼打滚记</p>
+                          嘻嘻，虽然没上峰??，宝藏也不错啦。。。人要学会知足。。。。。 另外两篇游记还希望各位老板多多支持。。 香港 ： http://www.mafengwo.cn/i/3434227.html
+                       </span>
+                            <div class="content-right-d-drd">
+                                <ul class="uldr">
+                                    <li><i></i>2369 土耳其</li>
+                                    <li class="i2"><i></i>没人来救你</li>
+                                    <li class="i3"><i></i>  62153/562</li>
+                                </ul>
+                                <p>1383<span></span></p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content-right-d-d5">
+                        <div class="content-right-d-dl">
+                            <img src="images/005.JPG" alt=""/>
+                        </div>
+                        <div class="content-right-d-dr">
+                       <span>
+                           <p>西游记——六个人的毕业旅行</p>
+                           去年七月份就完成的旅行，硬生生地被我一拖再拖。总算，就要结束了。 完成这一次旅行，大学就彻彻底底结束了。最难的东西总在开头，结尾尽剩一个送走一个的离别。大家在短暂的十天旅行后，还是各奔东西了，唯有...
+                       </span>
+                            <div class="content-right-d-drd">
+                                <ul class="uldr">
+                                    <li><i></i>143 青海湖，</li>
+                                    <li class="i2"><i></i>by  糖之蜜旅</li>
+                                    <li class="i3"><i></i>7272/69</li>
+                                </ul>
+                                <p>4920<span></span></p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+    <!-- 意见反馈弹窗 -->
+    <div class="fankui"><a href="#">意见反馈</a></div>
+    <div class="fk-bg">
+        <div class="fk-show">
+            <h3>意见反馈</h3>
+            <p>我们倾听你的声音</p>
+            <textarea id="feedback-textarea" placeholder="欢迎提出宝贵的意见和建议。抱歉我们无法逐一回复，但我们会认真阅读，你的支持是对我们最大的鼓励和帮助"></textarea>
+            <button>提交</button>
+        </div>
+    </div>
+</div>
+<div class="guanggao">
+    <img src="images/ss.png" alt=""/>
+</div>
+<div class="guanggaobig" id="j_ggBig">
+    <img src="images/limg.png" class="gg-limg" alt=""/>
+    <span class="gg-cls"></span>
+    <span class="gg-btn"></span>
+    </span>
+</div>
+<div class="return-top" id="j_returnTop">
+
+</div>
+<div class="footer">
+    <div class="w clearfix">
+        <dl>
+            <dt><a href="#">关于我们</a></dt>
+            <dd><a href="#">这里介绍</a></dd>
+            <dd><a href="#">招贤纳士</a></dd>
+            <dd><a href="#">网站荣誉</a></dd>
+            <dd><a href="#">联系我们</a></dd>
+        </dl>
+
+        <dl>
+            <dt><a href="#">商家服务</a></dt>
+            <dd><a href="#">这里营销</a></dd>
+            <dd><a href="#">商家登陆</a></dd>
+        </dl>
+        <dl>
+            <dt><a href="#">新手上路</a></dt>
+            <dd><a href="#">预订帮助</a></dd>
+            <dd><a href="#">服务条款</a></dd>
+            <dd><a href="#">版权声明</a></dd>
+        </dl>
+        <dl>
+            <dt><a href="#">合作伙伴</a></dt>
+            <dd><a href="#">国家旅游局</a></dd>
+            <dd><a href="#">人民网旅游</a></dd>
+            <dd><a href="#">光明网旅游</a></dd>
+            <dd><a href="#">央视网旅游</a></dd>
+            <dd><a href="#">中国日报网</a></dd>
+        </dl>
+
+        <div class="footer-shoucang fr">
+            <div class="shoucang-left fl">
+                <p>关注我们</p>
+
+                <div>
+
+                </div>
+            </div>
+            <div class="shoucang-right fr">
+                <p>用微信收藏这里</p>
+                <img src="images/vcode1-1.jpg"/>
+            </div>
+        </div>
+
+    </div>
+    <div class="ft-bottom clearfix">
+        <div class="w footer-bottom">
+            <div></div>
+            <span></span>
+        </div>
+    </div>
+
+</div>
+</body>
+</html>

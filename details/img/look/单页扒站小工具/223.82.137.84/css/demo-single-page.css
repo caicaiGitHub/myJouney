@@ -1,0 +1,291 @@
+﻿*, *:after, *:before { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+
+/* Clearfix hack by Nicolas Gallagher: http://nicolasgallagher.com/micro-clearfix-hack/ */
+.clearfix:before, .clearfix:after { content: " "; display: table; }
+.clearfix:after { clear: both; }
+
+html, body {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Lato', Calibri, Arial, sans-serif;
+    color: #fff;
+    background: #fbfbfb;
+    
+    overflow: hidden;
+}
+
+.pt-wrapper {
+    background:#000;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    -webkit-perspective: 1200px;
+    -moz-perspective: 1200px;
+    perspective: 1200px;
+}
+
+.pt-page {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    visibility: hidden;
+    overflow: hidden;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+
+
+.pt-page-current, .no-js .pt-page {
+    visibility: visible;
+    z-index: 1;
+}
+
+.no-js body {
+    overflow: auto;
+}
+
+.pt-trigger-container {
+    position: absolute;
+    width: 300px;
+    z-index: 999999;
+    left: 50%;
+    margin-top: 75px;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+.pt-trigger {
+    border: none;
+    font-size: 16px;
+    font-weight: 700;
+    margin: 10px 0 10px;
+    padding: 0 20px;
+    line-height: 40px;
+    height: 40px;
+    letter-spacing: 1px;
+    width: 100%;
+    cursor: pointer;
+    display: block;
+    font-family: Calibri;
+    box-shadow: 0 3px 0 rgba(0,0,0,0.3);
+
+}
+
+/* Page Styles */
+.pt-page-ontop {
+    z-index: 999;
+}
+
+.pt-page h1 {
+    position: absolute;
+    font-weight: 300;
+    font-size: 4.4em;
+    line-height: 1;
+    letter-spacing: 6px;
+    margin: 0;
+    top: 1%;
+    width: 100%;
+    text-align: center;
+    word-spacing: -0.3em;
+}
+
+
+/*.pt-page-1 {
+    background-color: #0ac2d2;
+}
+
+.pt-page-2 {
+    background-color: #7bb7fa;
+}
+
+.pt-page-3 {
+    background-color: #60d7a9;
+}
+
+.pt-page-4 {
+    background-color: #fdc162;
+}
+
+.pt-page-5 {
+    background-color: #fd6a62;
+}
+
+.pt-page-6 {
+    background-color: #f68dbb;
+}*/
+
+/*No Animation Support Message Style*/
+.pt-message {
+    display: none;
+    position: absolute;
+    z-index: 99999;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: #da475c;
+    color: #fff;
+    text-align: center;
+}
+
+.pt-message p {
+    margin: 0;
+    line-height: 60px;
+    font-size: 26px;
+}
+
+.no-cssanimations .pt-message {
+    display: block;
+}
+
+
+/* 2014.7.9 后加
+---------------------------------------------- */
+
+.pt-page img{
+    max-width: 100%;
+}
+
+.pt-page{
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;   
+}
+
+
+/*箭头指示引导*/
+@-webkit-keyframes start {
+    0%,30% {opacity: 0;-webkit-transform: translate(0,10px);}
+    60% {opacity: 1;-webkit-transform: translate(0,0);}
+    100% {opacity: 0;-webkit-transform: translate(0,-8px);}
+}
+@-moz-keyframes start {
+    0%,30% {opacity: 0;-moz-transform: translate(0,10px);}
+    60% {opacity: 1;-moz-transform: translate(0,0);}
+    100% {opacity: 0;-moz-transform: translate(0,-8px);}
+}
+@keyframes start {
+    0%,30% {opacity: 0;transform: translate(0,10px);}
+    60% {opacity: 1;transform: translate(0,0);}
+    100% {opacity: 0;transform: translate(0,-8px);}
+}
+
+/**
+ * 箭头指示元件
+ * -u-arrow
+ */
+.u-arrow {
+    zoom:.9;
+    position: fixed;
+    bottom: -17px;
+    left:50%;
+    z-index: 150;
+    width: 80px; 
+    height: 80px;
+    visibility: visible;
+   -webkit-transform: translate(-50%, -50%);
+   pointer-events:none!important;
+}
+.u-arrow p { position: absolute; top: 50%; left: 50%; margin: -14px 0 0 -25px; width: 50px; height: 38px;
+background-position: 0 0;
+    -webkit-animation: start 1.5s infinite ease-in-out;
+       -moz-animation: start 1.5s infinite ease-in-out;
+            animation: start 1.5s infinite ease-in-out;
+}
+
+.u-arrow-left {
+    zoom:.5;
+    position: fixed;
+    bottom: 50%;
+    right:0px;
+    z-index: 150;
+    width: 80px; 
+    height: 80px;
+    visibility: visible;
+   -webkit-transform: translate(-50%, -50%);
+   pointer-events:none!important;
+}
+.u-arrow-left p { position: absolute; top: 50%; left: 50%; margin: -14px 0 0 -25px; width: 28px; height: 50px; background-position: 0 -108px;
+    -webkit-animation: start 1.5s infinite ease-in-out;
+       -moz-animation: start 1.5s infinite ease-in-out;
+            animation: start 1.5s infinite ease-in-out;
+}
+
+.css_sprite01 {
+    background-image:url(../images/css_sprite01.png)!important;
+    background-repeat: no-repeat!important; } 
+
+/* LOading */
+.spinner {
+    position: fixed;
+    top:40%;
+    left: 50%;
+    z-index: 999;
+    margin: 0;
+    width: 40px;
+    height: 40px;
+    margin-left: -25px;
+    position: relative;
+    text-align: center;
+    -webkit-animation: rotate 2.0s infinite linear;
+    animation: rotate 2.0s infinite linear;
+}
+ 
+.dot1, .dot2 {
+  width: 60%;
+  height: 60%;
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  background-color: rgba(0,0,0,.4);
+  border-radius: 100%;
+   
+  -webkit-animation: bounce 2.0s infinite ease-in-out;
+  animation: bounce 2.0s infinite ease-in-out;
+}
+ 
+.dot2 {
+  top: auto;
+  bottom: 0px;
+  -webkit-animation-delay: -1.0s;
+  animation-delay: -1.0s;
+}
+ 
+@-webkit-keyframes rotate { 100% { -webkit-transform: rotate(360deg) }}
+@keyframes rotate { 100% { transform: rotate(360deg); -webkit-transform: rotate(360deg) }}
+ 
+@-webkit-keyframes bounce {
+  0%, 100% { -webkit-transform: scale(0.0) }
+  50% { -webkit-transform: scale(1.0) }
+}
+ 
+@keyframes bounce {
+  0%, 100% { 
+    transform: scale(0.0);
+    -webkit-transform: scale(0.0);
+  } 50% { 
+    transform: scale(1.0);
+    -webkit-transform: scale(1.0);
+  }
+}
+
+/* 音乐 */
+.music{position:absolute;right:0px;top:1%;width:90px;height:45px;pointer-events:auto;border-radius:38px;z-index:99; margin: 0 -30px 0 0 }
+.music::before{content:' ';visibility:hidden;opacity:0;display:block;width:100%;height:100%;background:url(../images/music.png) no-repeat 0 0;background-size:90px 90px;-webkit-transition:all .5s;}
+.music::after{content:' ';opacity:0.4;position:absolute;top:0;left:0;width:50%;height:100%;background:url(../images/music.png) no-repeat left bottom;background-size:90px 90px;-webkit-transition:opacity .5s;}
+.music.on::after{background-position:right bottom;}

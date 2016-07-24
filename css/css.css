@@ -1,0 +1,151 @@
+
+/*nav部分-S-*/
+.y_nav {
+    margin: 0 auto 15px;
+    width: 1000px;
+}
+.y_nav_hd
+{
+    height:30px;
+    padding:10px 0;
+    border-bottom:1px solid #ccc;
+    line-height:30px;
+}
+.y_nav_hd h2{
+    display: inline-block;
+    float:left;
+    width:170px;
+    font-size:24px;
+    font-weight:600;
+    color: #985eb4;
+}
+.y_nav_hd li {
+    float:left;
+    font-size:14px;
+    color:#999;
+    margin-right: 30px;
+    text-align: center;
+}
+.y_nav_hd li a {
+    display: inline-block;
+    width: 74px;
+    height: 30px;
+    color : #000;
+}
+.y_nav_hd .current {
+
+    background-color: #985eb4;
+    color: #fff;
+}
+.y_nav_con{
+    height:516px;
+    width: 1000px;
+    margin: 10px 3px 0  0;
+}
+.y_nav_con_left {
+    width: 155px;
+    height: 499px;
+    float: left;
+    background: url(../images/nav-hot-inset1.png) no-repeat bottom left;
+}
+.y_nav_con h3 {
+    line-height:30px;
+    font-size:16px;
+    font-family: "microsoft yahei";
+    color:#333;
+    font-weight:400;
+    margin-left:5px ;
+}
+.y_nav_con_left ul {
+    float:left;
+}
+.y_nav_con_left li{
+    width: 75px;
+    height: 30px;
+    margin: 15px 0 ;
+    color: #666;
+    line-height: 30px;
+    text-align: center;
+}
+.y_nav_con_left a {
+    display: block;
+    width: 40px;
+    height: 30px;
+    font-size: 12px;
+    font-weight: 400;
+}
+.y_nav_con_left a:hover {
+    background-color:#f9f9f9;
+    color: #C81623;
+}
+.y_nav_con_right {
+    width: 830px;
+    height: 516px;
+    float:left;
+    /*margin-left: 15px;*/
+}
+.y_nav_con_right ul {
+    width: 845px;
+    height: 516px;
+    display: none;
+}
+.y_nav_con_right .y_nav_con_right_pic1 {
+    display: block;
+}
+.y_nav_con_right li {
+    float:left;
+    width: 264px;
+    height: 243px;
+    margin: 0 15px 15px 0;
+    cursor: pointer;
+    border: 1px solid #eee;
+    position: relative;
+}
+.y_nav_con_right_li span img {
+    width: 82px;
+    height: 25px;
+    position: absolute;
+    top: 0;
+    left: -5px;
+}
+.y_nav_con_right img {
+    width: 264px;
+    height: 151px;
+}
+.y_nav_con_right h3 {
+    height: 40px;
+    /*width: 264px;*/
+    overflow: hidden;
+    line-height: 20px;
+    font-size: 13px;
+    font-weight: 400;
+    margin: 5px 0 10px;
+    padding: 0 5px;
+    background-color: #fff;
+    position:absolute;
+    bottom: 30px;
+}
+
+.y_nav_con_right .price  {
+    display: inline-block;
+    width: 84px;
+    height: 30px;
+    text-align: center;
+    line-height: 26px;
+    color: #ff8a00;
+    font-size: 14px;
+    font-weight: 400;
+    position: absolute;
+    bottom: 5px;
+}
+.price i {
+    font-size: 20px;
+    font-weight: 800;
+}
+.y_nav_con_right  s{
+    position: absolute;
+    bottom: 10px;
+    left:85px;
+    font-size: 14px;
+}
+/*nav部分-E-*/

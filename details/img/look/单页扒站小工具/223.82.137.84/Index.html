@@ -1,0 +1,709 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>3月6日《北京·纽约》志玲姐姐约你看电影哦！</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="css/animation.css"/>
+    <link rel="stylesheet" href="css/demo-single-page.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+    <script type="text/javascript" src="js/1c6dbb72f6e3437eb68db88bafc48ad2.js" charset="UTF-8"></script>
+    <!--<script src="js/pace.min.js"></script>
+    <script type="text/javascript">
+    function handler () {
+       
+       setTimeout(function(){
+        $('#loading').hide();
+        $('.pt-wrapper').show();
+        goflag=false;
+        $('.first-f').show();
+        },1000);
+    }
+    Pace.on("done", handler)
+</script>-->
+    <style>
+
+    #loading{
+        /*position: absolute;
+        top: 50%;
+        left: 50%;*/
+        z-index: 9;
+        width: 100%;
+        height: 100%;
+        background: url(images/bk0-1.jpg) no-repeat 50% 50%;
+        -webkit-background-size: cover;
+        background-size: cover;
+        /*color: #333;
+        -webkit-transform: translate(-50%,-50%);*/
+    }
+    #loading b{
+        position: absolute;
+        bottom: 10%;
+        width: 100%;
+        text-align: center;
+        color: #fff;
+    }
+    .pt-page-1{background-image: url(images/bk1-1.jpg);}
+    .pt-page-2{background: #000;}
+    .pt-page-3{background: #000;}
+    .pt-page-4{background:#e1dfdb}
+    .pt-page-5{background-image: url(images/bk5-1.jpg);}
+    .pt-page-6{background-image: url(images/bk6-1.jpg);}
+    .pt-page-7{background-image: url(images/bk7-1.jpg);}
+    .pt-page-8{background: #000;}
+
+	.pt-trigger-container{display:none;}
+    .pt-page div{
+        width: 100%;
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        top: 0
+    }
+    .btn.share,
+    .mv{
+        position: absolute;
+        left: 45%;
+        right: 45%;
+        bottom: 45%;
+        top: 50%;
+        z-index: 9;
+        background-color: rgba(255,255,255,.1);
+        border-radius: 300px;
+
+        color: transparent;
+        -webkit-user-select: none;
+        text-shadow: none !important;
+    }
+    .mv{
+        right: 43%;
+        bottom: 55%;
+        top: 35%;
+        left: 42%;
+    }
+    #close{
+        position: absolute;
+        top: 25%;
+        right: 4%;
+        z-index: 1042;
+        width: 10%;
+    }
+    #tenvideo_video_player_0{
+        display: none;
+        position: absolute;
+        z-index: 1041;
+        left: 0;
+        right: 0;
+        top: 0;
+        top: 50%;
+        -webkit-transform: translate(0,-50%);
+        background-color: rgba(255,255,255,.3);
+    }
+    .point-top {
+        position: fixed;
+        z-index: 9999;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        /*right: 35px;*/
+        /*height: 140px;*/
+        background: url(images/img_point.png) no-repeat 50% 50%;
+        /*background-size: cover;*/
+        -webkit-background-size: cover;
+        background-size: cover;
+
+        color: transparent;
+        -webkit-user-select: none;
+        text-shadow: none !important;
+    }
+
+    .m-backdrop {
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 1040;
+        background-color: rgba(0,0,0,0.5);
+
+    }
+    
+    </style>
+</head>
+
+<body >
+<div id="loading">
+        <!-- <div class="spinner">
+          <div class="dot1"></div>
+          <div class="dot2"></div>            
+        </div> -->
+      <b></b> 
+    </div>
+<div id="imgbox" style="display:none;">
+    <img _src="images/bk0-1.jpg" >
+    <img _src="images/bk1-1.jpg" > 
+    <img _src="images/building1.png" >
+    <img _src="images/building2.png" >
+    <img _src="images/building3.png" >
+    <img _src="images/building4.png" >
+    <img _src="images/2-text.png" >
+    <img _src="images/bk2-1.jpg" >
+    <img _src="images/light.png">
+    <img _src="images/woman.png">
+    <img _src="images/bus.png">
+    <img _src="images/card.png">
+    <img _src="images/bus-text.png">
+    <img _src="images/bk3-1.jpg">
+    <img _src="images/buildingx.jpg">
+    <img _src="images/chair.png">
+    <img _src="images/card.png" >
+    <img _src="images/3-text_01.png" >
+    <img _src="images/3-text_02.png" >
+    <img _src="images/3-text_03.png" >
+    <img _src="images/bk4-1.jpg" >
+    <img _src="images/ub.png">
+    <img _src="images/ur.png" >
+    <img _src="images/left.png" >
+    <img _src="images/right.png" >
+    <img _src="images/left.png" >
+    <img _src="images/right.png" >
+    <img _src="images/left.png" >
+    <img _src="images/right.png">
+    <img _src="images/left.png" >
+    <img _src="images/right.png" >
+    <img _src="images/4-text.png" >
+    <img _src="images/bk5-1.jpg" > 
+    <img _src="images/5x-char_01.png">
+    <img _src="images/5x-char_02.png" >
+    <img _src="images/5x-char_03.png" >
+    <img _src="images/5x-char_04.png" >
+    <img _src="images/5x-char_05.png" >
+    <img _src="images/5x-char_06.png" >
+    <img _src="images/5x-char_07.png" >
+    <img _src="images/5x-char_08.png" >
+    <img _src="images/5x-char_09.png" >            
+    <img _src="images/card2.png" >
+    <img _src="images/bk6-1.jpg" > 
+    <img _src="images/6x-char_01.png">
+    <img _src="images/6x-char_02.png">
+    <img _src="images/6x-char_03.png">
+    <img _src="images/6x-char_04.png">
+    <img _src="images/6x-char_05.png">
+    <img _src="images/bk7-1.jpg" > 
+    <img _src="images/video_02.png"> 
+    <img _src="images/video_01.png">
+    <img _src="images/8-text.jpg">
+    <img _src="images/8-char_01.png" >
+    <img _src="images/8-char_02.png" >
+    <img _src="images/8-char_03.png" >
+    <img _src="images/8-char_04.png" >
+    <img _src="images/8-char_05.png" >
+    <img _src="images/8-char_06.png" >
+    <img _src="images/8-char_05.png" >
+    <img _src="images/8-char_07.png" >
+    <img _src="images/8-char_09.png">  
+ 
+
+</div>
+<div class="pt-wrapper" style="-webkit-touch-callout:none;">
+    <div class="pt-trigger-container">
+        <!-- 15 16 -->
+        <button class="pt-trigger" data-animation="53" data-goto="-1">Go to next page</button>
+        <button class="pt-trigger" data-animation="52" data-goto="-2">Go to previous page</button>
+        <button class="pt-trigger" data-animation="52" data-goto="4">Go to next page</button>
+        <button class="pt-trigger" data-animation="52" data-goto="5">Go to previous page</button>
+
+
+
+        <button class="pt-trigger-list" data-animation="53" data-goto="0"></button>
+        <button class="pt-trigger-list" data-animation="53" data-goto="1"></button>
+        <button class="pt-trigger-list" data-animation="53" data-goto="2"></button>
+        <button class="pt-trigger-list" data-animation="53" data-goto="3"></button>
+        <button class="pt-trigger-list" data-animation="53" data-goto="4"></button>
+        <button class="pt-trigger-list" data-animation="53" data-goto="5"></button>
+        <button class="pt-trigger-list" data-animation="53" data-goto="6"></button>
+        <button class="pt-trigger-list" data-animation="53" data-goto="7"></button>
+
+
+    </div>
+
+    <!--All Pages-->
+    <div class="pt-page pt-page-1">
+        <h1><strong></strong></h1>
+        <span class="first-f" style="display:none;">
+            <img  class="building first" src="images/building1.png" >
+            <img  class="building secend" src="images/building2.png" >
+            <img  class="building third" src="images/building3.png">
+            <img  class="building fourth" src="images/building4.png">
+            <img  class="star star1" src="images/star.png">
+            <img  class="star star2" src="images/star.png">
+            <img  class="star star3" src="images/star.png">
+            <img  class="star star4" src="images/star.png">
+            <img  class="star star5" src="images/star.png">
+            <img  class="star star6" src="images/star.png">
+
+            <img  class="text" src="images/2-text.png">
+        </span>
+
+    </div>
+    <div class="pt-page pt-page-2">
+        <h1><strong></strong></h1>
+        <span class="busstop" style="display:none;">
+            <img src="images/bk2-1.jpg" style="display: block;">
+            <img class="light" src="images/light.png">
+            <div class="woman"><img src="images/woman.png"></div>
+            <img class="bus" src="images/bus.png">
+            <img class="card" src="images/card.png">
+            <img class="text" src="images/bus-text.png">
+        </span>
+    </div>
+    <div class="pt-page pt-page-3">
+        <h1><strong></strong></h1>
+        <span class="coach" style="display:none;" >
+                <img src="images/bk3-1.jpg" class="bk">
+                <div class="building">
+                    <div id="building1" class="building1"></div>
+                    <div id="building2" class="building2"></div>
+                </div>
+                <img src="images/chair.png" class="chair">
+                <img src="images/card.png" class="card">
+                <img src="images/3-text_01.png" id ="text1" class="text text1">
+                <img src="images/3-text_02.png" id ="text2" class="text text2">
+                <img src="images/3-text_03.png" id ="text3" class="text text3">                          
+        </span>
+    </div>
+    <div class="pt-page pt-page-4">
+        <h1><strong></strong></h1>
+        <span class="umbrella" style="display:none;" >
+                <img src="images/bk4-1.jpg" class="bk">
+                <img src="images/ub.png" class="ub">
+                <img src="images/ur.png" class="ur">
+                <img src="images/card.png" class="card">
+                <img src="images/left.png" class="leftfoot left1">
+                <img src="images/right.png" class="rightfoot right1">
+                <img src="images/left.png" class="leftfoot left2">
+                <img src="images/right.png" class="rightfoot right2">
+                <img src="images/left.png" class="leftfoot left3">
+                <img src="images/right.png" class="rightfoot right3">
+                <img src="images/left.png" class="leftfoot left4">
+                <img src="images/right.png" class="rightfoot right4">
+                <img src="images/4-text.png" id="textp4" class="text">                          
+        </span>
+    </div>
+    <div class="pt-page pt-page-5">
+        <h1><strong></strong></h1>
+        <span class="again" style="display:none;">
+                
+                <img src="images/5x-char_01.png" class="charl5 char1">
+                <img src="images/5x-char_02.png" class="charl5 char2">
+                <img src="images/5x-char_03.png" class="charl5 char3">
+                <img src="images/5x-char_04.png" class="charl5 char4">
+                <img src="images/5x-char_05.png" class="charl5 char5">
+                <img src="images/5x-char_06.png" class="charl5 char6">
+                <img src="images/5x-char_07.png" class="charl5 char7">
+                <img src="images/5x-char_08.png" class="charl5 char8">
+                <img src="images/5x-char_09.png" class="charl5 char9">            
+                <img src="images/card2.png" class="card">
+        </span>
+    </div>
+    <div class="pt-page pt-page-6">
+        <h1><strong></strong></h1>
+        <span class="oldheart" style="display:none;">
+                
+                <img src="images/6x-char_01.png" class="charl6 char1">
+                <img src="images/6x-char_02.png" class="charl6 char2">
+                <img src="images/6x-char_03.png" class="charl6 char3">
+                <img src="images/6x-char_04.png" class="charl6 char4">
+                <img src="images/6x-char_05.png" class="charl6 char5">      
+                <img src="images/card2.png" class="card">
+        </span>
+    </div>
+    <div class="pt-page pt-page-7" style="position: relative;">
+        <h1><strong></strong></h1>
+        <span class="videopage" style="display:none;">
+            <img src="images/video_02.png" class="fname"> 
+            <img src="images/video_01.png" class="videobtn mv">   
+        </span>
+    </div>
+   <div class="pt-page pt-page-8">
+        <h1><strong></strong></h1>
+        <span class="showdate" style="display:none;">
+                <div class="text"><img src="images/8-text.jpg"></div>
+                <div class="charlx8">
+                <img src="images/8-char_01.png" class="charl8 char1">
+                <img src="images/8-char_02.png" class="charl8 char2">
+                <img src="images/8-char_03.png" class="charl8 char3">
+                <img src="images/8-char_04.png" class="charl8 char4">
+                <img src="images/8-char_05.png" class="charl8 char5">
+                <img src="images/8-char_06.png" class="charl8 char6">
+                <img src="images/8-char_05.png" class="charl8 char7">
+                <img src="images/8-char_07.png" class="charl8 char8"></div>
+                <div class="breath1"><img src="images/8-char_09.png" class="breath" > </div>         
+        </span>
+    </div>  
+
+    <!-- 声音 -->
+     <div class="music" id="music"></div> 
+    <!-- 箭头指示引导 -->
+    <div class="u-arrow" style="display:none;"><p class="css_sprite01"></p></div>
+
+</div>
+
+<!-- 点击右上角提示 -->
+<div id="Share" class="point-top" style="display:none;">点击右上角提示,发送给朋友或分享到朋友圈</div>
+
+<!-- 遮罩层 -->
+<div id="Mask" class="m-backdrop" style="display:none;"></div>
+<img src="images/close.png" id="close" style="display:none;"/>
+<video id="tenvideo_video_player_0" width="100%" height="50%" x-webkit-airplay="true" controls="" preload="none" src="css/film.mp4"></video>
+
+<script src="js/zepto.min.js"></script>
+<script src="js/z-touch.js"></script>
+<script src="js/papp.js"></script>
+<script src="js/transition-zs.js"></script>
+<script type="text/javascript">
+//chage
+var goflag=false;
+var intervalnum,setTimeoutnum1,setTimeoutnum2;
+var disflag=false;
+var dlogflag=false;
+var musicflag;
+function loading() {
+   // $('#loading b').html('0%');
+    var imgList = $('#imgbox img');
+    var len = imgList.length, count = 0;
+    imgList.each(function(index, img) {
+        var imgT= new Image();
+        imgT.src=$(img).attr('_src');
+        //$(img).attr('src', $(img).attr('_src'));
+        // $(img).load(function(){
+        //$(img).onload=function(){ 
+        imgT.onload=function(){
+            $('#imgbox').hide();
+            $('.pt-wrapper').hide();
+            count++;
+            $(img).attr("src", imgT.src);
+            $(img).show();
+            // $('#loading span').html('图片加载中。。。' + parseInt(count/len * 100,10) + '%');
+           $('#loading b').html( parseInt(count/len * 100,10) + '%');
+            if(count == len) {
+                $('#loading').hide();
+                $('.pt-wrapper').show();
+                //chage
+                goflag=true;
+                $('.first-f').show();
+                setTimeout(function() {$('.u-arrow').show();goflag=true;},6000);
+                
+
+                
+            }
+            //console.log('ok' + index)
+        };
+    });
+}
+
+/*$('.videobtn').on('touchend', function(){
+    console.log("xx");
+    window.location.href="http://v.qq.com/page/s/h/y/s00159y1phy.html?_out=101";
+    });*/
+
+
+$(function () {
+    loading();
+
+	document.addEventListener('touchmove', function (e) {
+		e.preventDefault();
+		e.stopPropagation();
+	}, false);
+	
+	var btns = $('.pt-trigger');
+	function go(dire) {
+		  var btn = dire == 'up' ? btns.eq(0) : btns.eq(1);
+		  PageTransitions.Animate(btn);       
+	}
+
+    function go1(dire) {
+          var btn = dire == 'next1' ? btns.eq(2) : btns.eq(3);
+          PageTransitions.Animate(btn);
+    }
+    
+
+    function showpage1(action)
+    {
+        go(action);               
+        goflag=false;
+        $('.first-f').show();
+        setTimeout(function() {$('.u-arrow').show();goflag=true;},6000);
+        //goflag=false;
+    }
+    function showpage2(action)
+    {
+        go(action); 
+        //goflag=false;              
+        $('.u-arrow').hide();
+        $('.busstop').show();
+        dlogflag=true;
+        setTimeoutnum1=setTimeout(function(){
+            $('.u-arrow').show();
+            goflag=true;
+        }, 9000);
+    }
+    function showpage3(action)
+    {
+        go(action);               
+        
+        $('.coach').show();
+        setp3();
+        //document.getElementById("building1").style.backgroundPosition="-100px 0";
+        //document.getElementById("building1").style.width= 10 +"px";
+        disflag=true;
+            intervalnum=setInterval(function() {
+               var bu=document.getElementById("building2").style.backgroundPositionX
+                if (bu=="" || parseInt(bu)>=-215) {
+                    bu=-720 ;
+                    document.getElementById("building2").style.backgroundPositionX= -720 +"px";
+                    
+                }else{
+                    bu=(parseInt(bu)+10);
+                    document.getElementById("building2").style.backgroundPositionX= (parseInt(bu)+10) +"px";
+                };
+                if (bu>=-215){
+                    document.getElementById("building1").style.backgroundPositionX=-515 +"px";
+                }
+
+                else{
+                document.getElementById("building1").style.backgroundPositionX=bu+215 +"px";}
+                console.log("pr",bu);
+               
+
+            },100);
+
+
+    }
+    function showpage7(action)
+    {
+        go(action);               
+        $('.videopage').show();
+        $('.u-arrow').show();
+    }
+
+    function setp3(){
+        var winheight = $(window).height();
+        var winwidth = $(window).width();
+        var text1=document.getElementById('text1');
+        var text2=document.getElementById('text2');
+        var text3=document.getElementById('text3');
+        console.log("winheight",winheight,"winwidth",winwidth);
+        //console.log("text",document.getElementById("text").offsetHeight,document.getElementById("text").offsetWidth);
+         if (winheight < 500) {
+            text1.style.bottom=winheight * 0.36 +'px';
+            text2.style.bottom=winheight * 0.36 +'px';
+            text3.style.bottom=winheight * 0.36 +'px';
+        }
+    }
+    function setp4(){
+        var winheight = $(window).height();
+        var winwidth = $(window).width();
+        var text1=document.getElementById('textp4');
+        console.log("winheight",winheight,"winwidth",winwidth);
+        //console.log("text",document.getElementById("text").offsetHeight,document.getElementById("text").offsetWidth);
+         if (winheight > 500) {
+            text1.style.bottom=winheight * 0.50 +'px';
+        }
+    }
+
+
+	$(document).swipeUp(function() {
+
+        
+        var currentPageIndex = btns.closest('.pt-wrapper').data('current');
+        console.log("up", currentPageIndex);
+        var n = parseInt(currentPageIndex);
+        console.log("goflag",goflag,"n",n);
+        if (goflag) {
+
+            switch(n)
+            {
+            case 0:
+                $('.first-f').hide();
+                showpage2("up");
+                //test();
+              break;
+            case 1:
+                $('.busstop').hide();
+                dlogflag=false;
+                clearTimeout(setTimeoutnum1);
+                //clearTimeout(setTimeoutnum2);
+                showpage3("up");
+                
+              break;
+            case 2:
+                $('.coach').hide();
+                disflag=false;
+                window.clearInterval(intervalnum);                
+                go('up');
+                $('.umbrella').show();
+                setp4();
+
+              break;
+            case 3:
+                $('.umbrella').hide();            
+                go('up');
+                $('.again').show();
+              break;
+            case 4:
+                $('.again').hide();            
+                go('up');
+                $('.oldheart').show();
+              break;
+              
+            case 5: 
+                $('.oldheart').hide();
+                go('up');
+                $('.videopage').show();
+              break;
+            case 6: 
+                $('.videopage').hide();
+                go('up');
+                $('.showdate').show();
+              break;
+            case 7:
+                $('.showdate').hide ();
+                go('up');               
+                
+                $('.u-arrow').hide();
+                showpage1("up");
+              break;
+            default:
+               go('up');
+              //n 与 case 1 和 case 2 不同时执行的代码
+            }
+        }
+	});
+
+	$(document).swipeDown(function() {
+		var currentPageIndex = btns.closest('.pt-wrapper').data('current');
+        console.log("down", currentPageIndex);
+        var n = parseInt(currentPageIndex);
+        if (goflag) {
+        switch(n)
+        {
+        case 0:break;
+        case 1:
+            $('.busstop').hide();           
+            showpage1("down");
+            
+          break;
+        case 2:
+             $('.coach').hide();           
+            window.clearInterval(intervalnum);
+             showpage2("down");
+          break;
+        case 3:
+            $('.umbrella').hide();
+            showpage3("down");
+          break;
+        case 4: 
+            $('.again').hide();            
+            go('down');
+            $('.umbrella').show();
+          break;
+        case 5: 
+            $('.oldheart').hide();            
+            go('down');
+            $('.again').show();
+          break;
+        case 6: 
+            $('.videopage').hide();            
+            go('down');
+            $('.oldheart').show();
+          break;
+        case 7: 
+            $('.showdate').hide();            
+            go('down');
+            $('.videopage').show();
+          break;
+        default:
+           //alert();
+           go('down');
+          //n 与 case 1 和 case 2 不同时执行的代码
+        }
+        }
+        //go('down')
+	});
+
+          
+    //音乐
+    papp.audio({
+          target : ".music",
+             src : "css/music.mp3",
+         preload : "auto",
+            loop : true,
+        autoPlay : true
+    });
+
+    //播放视频
+    $('.mv').tap(function (event) {
+        if (musicflag) {
+            papp.audio.pause();
+        };
+
+        M.style.display="block";
+        $("#tenvideo_video_player_0").show();
+        $("#close").show();
+        document.getElementById("tenvideo_video_player_0").play();
+        // $("#tenvideo_video_player_0").play();
+        
+        event.stopPropagation();
+        event.stopImmediatePropagation();
+    });    
+
+    $('#Mask,#close').tap(function (){
+        if (musicflag) {
+            papp.audio.play();
+        }
+
+        M.style.display="none";
+        $("#tenvideo_video_player_0").hide();
+        $("#close").hide();
+
+         event.stopPropagation();
+        event.stopImmediatePropagation();       
+    });
+
+    // 分享弹层
+    // ---------------------------------
+    var M=document.getElementById("Mask"),S=document.getElementById("Share");
+    $('.share').tap(function (event) {
+        
+        // M.style.display="block";
+        S.style.display="block";
+        
+        event.stopPropagation();
+        event.stopImmediatePropagation();
+    });
+    $('#Share').tap(function (){
+        // M.style.display="none";
+        S.style.display="none";
+    });
+
+
+    $('a').click(function(event) {
+        event.preventDefault();
+    }).tap(function(event) {
+        location.href = event.currentTarget.href;
+    });
+
+
+});
+
+
+</script>
+
+</body>
+</html>

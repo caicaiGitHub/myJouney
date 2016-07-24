@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>世界那么大 只想来这里</title>
+    <link rel="stylesheet" href="../css/base.css"/>
+    <link rel="shortcut icon" href="../favicon.ico"/>
+
+    <style>
+        .xiao {
+            border: 1px solid #ccc;
+            float: left;
+            /*padding: 5px;*/
+            margin: 2px;
+            border-radius: 5px;
+            box-shadow: 1px 1px 1px 1px rgba(0,0,0,.1);
+            overflow: hidden;
+        }
+         .zi {
+             width: 236px;
+             margin: 5px 0 5px 5px;
+
+         }
+    </style>
+    <script src="../js/jquery-1.11.1.min.js"></script>
+    <script src="../js/base.js"></script>
+    <script>
+        window.onload  = function() {
+
+            pubuliu("box", "xiao");
+            function pubuliu(id, obj) {
+                var box = document.getElementById(id);
+                var xiao = box.children
+                var xiaoWidth = xiao[0].offsetWidth;
+                var column = Math.floor(document.documentElement.clientWidth / xiaoWidth);
+                console.log(column);
+                var arrHeight = [];
+                for (var i = 0; i < xiao.length; i++) {
+                    if (i < column) {
+                        arrHeight[i] = xiao[i].offsetHeight;
+
+                    }
+                    else {
+                        var minHeight = Math.min.apply("", arrHeight);
+                        var minIndex = minHeightImgIndex(minHeight);
+                        console.log(minIndex);
+                        xiao[i].style.position = "absolute";
+                        xiao[i].style.top = minHeight + 2 + "px";
+                        xiao[i].style.left = xiao[minIndex].offsetLeft + "px";
+                        arrHeight[minIndex] = arrHeight[minIndex] + xiao[i].offsetHeight;
+                    }
+                }
+                function minHeightImgIndex(height) {
+                    for (var k in arrHeight) {
+                        if (arrHeight[k] == height) {
+                            return k;
+                        }
+                    }
+                }
+            }
+    }
+    </script>
+</head>
+<body>
+<div class="site-nav fl ">
+    <div class="w">
+        <div class="fl site-nav-logo">
+            <a href="#" title="www.journey.com">这里 www.journey.com
+            </a>
+        </div>
+        <ul class="site-nav-list fl" id="j_nav_list">
+            <li ><a href="../index.html">首页</a></li>
+            <li class="icon" id="j_nav_liset_icon">
+                <a href="#">发现
+                    <i><s>◇</s></i>
+                </a>
+                <div>
+                    <span><a href="wd.html">周边游</a></span>
+                    <span><a href="#">国内游</a></span>
+                    <span><a href="#">出境游</a></span>
+                </div>
+            </li>
+            <li ><a href="shangcheng.html">这里商城</a></li>
+            <li class="current"><a href="leil.html">大咖</a></li>
+            <li><a href="#">预订</a></li>
+        </ul>
+        <div class="fr site-nav-right">
+            <span ><input type="text" placeholder="好山好水品好茶"/></span>
+            <span>
+                <i class="site-nav-weibo"></i>
+            </span>
+            <span>
+                <i class="site-nav-qq"></i>
+            </span>
+            <span class="site-nav-register"><a href="#">注册</a></span>
+            <span>|</span>
+            <span class="site-nav-login"><a href="#">登录</a></span>
+        </div>
+    </div>
+</div>
+
+<div style="margin-left:60px" >
+    <div class="box " id="box">
+        <div class="xiao">
+            <img src="img/1.jpg" alt="" title="冰封渤海，极地景观-自驾JIMNY拍摄北戴河" />
+            <div class="zi">
+                <img src="img/a1.bmp" alt=""/>
+                <a href="javascript:;">冰封渤海，极地景观-自驾JIMNY拍摄北戴河</a>
+                <div class="b1"></div>
+            </div>
+        </div>
+        <div class="xiao">
+            <img src="img/2.jpg" alt="" title="雪后的石家庄美景如画"/>
+            <div class="zi">
+                <img src="img/a2.bmp" alt=""/>
+                <a href="javascript:;">雪后的石家庄美景如画</a>
+            </div>
+        </div>
+        <div class="xiao">
+            <img src="img/3.jpg" alt="" title="北方的小黄山---白石山"/>
+            <div class="zi">
+                <img src="img/a3.bmp" alt=""/>
+                <a href="javascript:;">北方的小黄山---白石山</a>
+            </div>
+        </div>
+        <div class="xiao">
+            <img src="img/4.jpg" alt="" title="红叶漫深秋 忘情仙台山"/>
+            <div class="zi">
+                <img src="img/a1.bmp" alt=""/>
+                <a href="javascript:;">红叶漫深秋 忘情仙台山</a>
+            </div>
+        </div>
+        <div class="xiao">
+            <img src="img/25.jpg" alt="" title="第一次参加乐途徒步，风中，笑"/>
+            <div class="zi">
+                <img src="img/a3.bmp" alt=""/>
+                <a href="javascript:;">第一次参加乐途徒步，风中，笑</a>
+            </div>
+        </div>
+        <div class="xiao">
+            <img src="img/26.jpg" alt="" title="承德 游避暑山庄"/>
+            <div class="zi">
+                <img src="img/a4.bmp" alt=""/>
+                <a href="javascript:;">承德 游避暑山庄</a>
+            </div>
+        </div>
+        <div class="xiao">
+            <img src="img/27.jpg" alt="" title="去秦皇岛游玩"/>
+            <div class="zi">
+                <img src="img/a5.bmp" alt=""/>
+                <a href="javascript:;">去秦皇岛游玩</a>
+            </div>
+        </div>
+        <div class="xiao">
+            <img src="img/28.jpg" alt="" title="天津，一座快乐的城市"/>
+            <div class="zi">
+                <img src="img/a6.bmp" alt=""/>
+                <a href="javascript:;">天津，一座快乐的城市</a>
+            </div>
+        </div>
+        <div class="xiao">
+            <img src="img/29.jpg" alt="" title="粉黛天津文化街 水墨丹青杨柳青"/>
+            <div class="zi">
+                <img src="img/a7.bmp" alt=""/>
+                <a href="javascript:;">粉黛天津文化街 水墨丹青杨柳青</a>
+            </div>
+        </div>
+        <div class="xiao">
+            <img src="img/30.jpg" alt="" title="坝上秋色之金色草原"/>
+            <div class="zi">
+                <img src="img/a8.bmp" alt=""/>
+                <a href="javascript:;">坝上秋色之金色草原</a>
+            </div>
+        </div>
+        <div class="xiao">
+            <img src="img/31.jpg" alt="" title="秋意浓，十月寒天之坝上行摄记"/>
+            <div class="zi">
+                <img src="img/a9.bmp" alt=""/>
+                <a href="javascript:;">秋意浓，十月寒天之坝上行摄记</a>
+            </div>
+        </div>
+        <div class="xiao">
+            <img src="img/32.jpg" alt="" title="历史的召唤 开平第一楼"/>
+            <div class="zi">
+                <img src="img/a10.bmp" alt=""/>
+                <a href="javascript:;">历史的召唤 开平第一楼</a>
+            </div>
+        </div>
+        <div class="xiao">
+            <img src="img/33.jpg" alt="" title="天津黄崖关 · 看津城最红叶"/>
+            <div class="zi">
+                <img src="img/a11.bmp" alt=""/>
+                <a href="javascript:;">天津黄崖关 · 看津城最红叶</a>
+            </div>
+        </div>
+        <div class="xiao">
+            <img src="img/34.jpg" alt="" title="红叶漫深秋 忘情仙台山"/>
+            <div class="zi">
+                <img src="img/a12.bmp" alt=""/>
+                <a href="javascript:;">红叶漫深秋 忘情仙台山</a>
+            </div>
+        </div>
+        <div class="xiao">
+            <img src="img/35.jpg" alt="" title="井陉古镇，被“驴友”热捧的文化古镇"/>
+            <div class="zi">
+                <img src="img/a3.bmp" alt=""/>
+                <a href="javascript:;">井陉古镇，被“驴友”热捧的文化古镇</a>
+            </div>
+        </div>
+        <div class="xiao">
+            <img src="img/36.jpg" alt="" title="北方的小黄山---白石山"/>
+            <div class="zi">
+                <img src="img/a5.bmp" alt=""/>
+                <a href="javascript:;">北方的小黄山---白石山</a>
+            </div>
+        </div>
+        <div class="xiao">
+            <img src="img/37.jpg" alt="" title="光合谷温泉度假酒店——百名达人游天津"/>
+            <div class="zi">
+                <img src="img/a6.bmp" alt=""/>
+                <a href="javascript:;">光合谷温泉度假酒店——百名达人游天津</a>
+            </div>
+        </div>
+        <div class="xiao">
+            <img src="img/38.jpg" alt="" title="盘山——百名达人游天津"/>
+            <div class="zi">
+                <img src="img/a1.bmp" alt=""/>
+                <a href="javascript:;">盘山——百名达人游天津</a>
+            </div>
+        </div>
+        <div class="xiao">
+            <img src="img/39.jpg" alt="" title="毛家峪——百名达人游天"/>
+            <div class="zi">
+                <img src="img/a9.bmp" alt=""/>
+                <a href="javascript:;">毛家峪——百名达人游天</a>
+            </div>
+        </div>
+        <div class="xiao">
+            <img src="img/40.jpg" alt="" title="一路来到中国三大古代石窟之一云冈石窟"/>
+            <div class="zi">
+                <img src="img/a7.bmp" alt=""/>
+                <a href="javascript:;">一路来到中国三大古代石窟之一云冈石窟</a>
+            </div>
+        </div>
+        <div class="xiao">
+            <img src="img/41.jpg" alt="" title="独乐寺——百名达人游天津"/>
+            <div class="zi">
+                <img src="img/a14.bmp" alt=""/>
+                <a href="javascript:;">独乐寺——百名达人游天津</a>
+            </div>
+        </div>
+        <div class="xiao">
+            <img src="img/42.jpg" alt="" title="天津之眼——百名达人游天津"/>
+            <div class="zi">
+                <img src="img/a15.bmp" alt=""/>
+                <a href="javascript:;">天津之眼——百名达人游天津</a>
+            </div>
+        </div>
+        <div class="xiao">
+            <img src="img/43.jpg" alt="" title="瑞吉金融街酒店——百名达人游天津"/>
+            <div class="zi">
+                <img src="img/a13.bmp" alt=""/>
+                <a href="javascrip:;">瑞吉金融街酒店——百名达人游天津</a>
+            </div>
+        </div>
+        <div class="xiao">
+            <img src="img/44.jpg" alt="" title="渔阳宾馆午宴——百名达人游天津"/>
+            <div class="zi">
+                <img src="img/a16.bmp" alt=""/>
+                <a href="javascript:;">渔阳宾馆午宴——百名达人游天津</a>
+            </div>
+        </div>
+        <div class="xiao">
+            <img src="img/100.jpg" alt="" title="黄崖关长城——百名达人游天津"/>
+            <div class="zi">
+                <img src="img/a17.bmp" alt=""/>
+                <a href="javascript:;">黄崖关长城——百名达人游天津</a>
+            </div>
+        </div>
+        <div class="xiao">
+            <img src="img/46.jpg" alt="" title="秋景如画般的障石岩"/>
+            <div class="zi">
+                <img src="img/a1.bmp" alt=""/>
+                <a href="javascript:;">秋景如画般的障石岩</a>
+            </div>
+        </div>
+        <div class="xiao">
+            <img src="img/47.jpg" alt="" title="雪中游览保定涿州影视城"/>
+            <div class="zi">
+                <img src="img/a17.bmp" alt=""/>
+                <a href="javascript:;">雪中游览保定涿州影视城</a>
+            </div>
+        </div>
+        <div class="xiao">
+            <img src="img/48.jpg" alt="" title="潘家口"/>
+            <div class="zi">
+                <img src="img/a18.bmp" alt=""/>
+                <a href="javascript:;">潘家口</a>
+            </div>
+        </div>
+        <div class="xiao">
+            <img src="img/49.jpg" alt="" title="野三坡美食"/>
+            <div class="zi">
+                <img src="img/a19.bmp" alt=""/>
+                <a href="javascript:;">野三坡美食</a>
+            </div>
+        </div>
+        <div class="xiao">
+            <img src="img/50.jpg" alt="" title="探索者名将军团真人CS"/>
+            <div class="zi">
+                <img src="img/a20.bmp" alt=""/>
+                <a href="javascript:;">探索者名将军团真人CS</a>
+            </div>
+        </div>
+        <div class="xiao">
+            <img src="img/51.jpg" alt="" title="去草原不能错过的事情"/>
+            <div class="zi">
+                <img src="img/a21.bmp" alt=""/>
+                <a href="javascript:;">去草原不能错过的事情</a>
+            </div>
+        </div>
+        <div class="xiao">
+            <img src="img/52.jpg" alt="" title="实用性攻略之坝上——草原王国"/>
+            <div class="zi">
+                <img src="img/a22.bmp" alt=""/>
+                <a href="javascript:;">实用性攻略之坝上——草原王国</a>
+            </div>
+        </div>
+        <div class="xiao">
+            <img src="img/53.jpg" alt="" title="美丽三坡多彩风情"/>
+            <div class="zi">
+                <img src="img/a23.bmp" alt=""/>
+                <a href="javascript:;">美丽三坡多彩风情</a>
+            </div>
+        </div>
+        <div class="xiao">
+            <img src="img/54.jpg" alt="" title="秋日白石山 · 玻璃栈道上的笑声"/>
+            <div class="zi">
+                <img src="img/a24.bmp" alt=""/>
+                <a href="javascript:;">秋日白石山 · 玻璃栈道上的笑声</a>
+            </div>
+        </div>
+
+
+
+        <div class="xiao">
+            <img src="img/1.jpg" alt="" title="冰封渤海，极地景观-自驾JIMNY拍摄北戴河" />
+            <div class="zi">
+                <img src="img/a1.bmp" alt=""/>
+                <a href="javascript:;">冰封渤海，极地景观-自驾JIMNY拍摄北戴河</a>
+                <div class="b1"></div>
+            </div>
+        </div>
+        <div class="xiao">
+            <img src="img/2.jpg" alt="" title="雪后的石家庄美景如画"/>
+            <div class="zi">
+                <img src="img/a2.bmp" alt=""/>
+                <a href="javascript:;">雪后的石家庄美景如画</a>
+            </div>
+        </div>
+        <div class="xiao">
+            <img src="img/3.jpg" alt="" title="北方的小黄山---白石山"/>
+            <div class="zi">
+                <img src="img/a3.bmp" alt=""/>
+                <a href="javascript:;">北方的小黄山---白石山</a>
+            </div>
+        </div>
+        <div class="xiao">
+            <img src="img/4.jpg" alt="" title="红叶漫深秋 忘情仙台山"/>
+            <div class="zi">
+                <img src="img/a1.bmp" alt=""/>
+                <a href="javascript:;">红叶漫深秋 忘情仙台山</a>
+            </div>
+        </div>
+        <div class="xiao">
+            <img src="img/25.jpg" alt="" title="第一次参加乐途徒步，风中，笑"/>
+            <div class="zi">
+                <img src="img/a3.bmp" alt=""/>
+                <a href="javascript:;">第一次参加乐途徒步，风中，笑</a>
+            </div>
+        </div>
+        <div class="xiao">
+            <img src="img/26.jpg" alt="" title="承德 游避暑山庄"/>
+            <div class="zi">
+                <img src="img/a4.bmp" alt=""/>
+                <a href="javascript:;">承德 游避暑山庄</a>
+            </div>
+        </div>
+        <div class="xiao">
+            <img src="img/27.jpg" alt="" title="去秦皇岛游玩"/>
+            <div class="zi">
+                <img src="img/a5.bmp" alt=""/>
+                <a href="javascript:;">去秦皇岛游玩</a>
+            </div>
+        </div>
+        <div class="xiao">
+            <img src="img/28.jpg" alt="" title="天津，一座快乐的城市"/>
+            <div class="zi">
+                <img src="img/a6.bmp" alt=""/>
+                <a href="javascript:;">天津，一座快乐的城市</a>
+            </div>
+        </div>
+        <div class="xiao">
+            <img src="img/29.jpg" alt="" title="粉黛天津文化街 水墨丹青杨柳青"/>
+            <div class="zi">
+                <img src="img/a7.bmp" alt=""/>
+                <a href="javascript:;">粉黛天津文化街 水墨丹青杨柳青</a>
+            </div>
+        </div>
+        <div class="xiao">
+            <img src="img/30.jpg" alt="" title="坝上秋色之金色草原"/>
+            <div class="zi">
+                <img src="img/a8.bmp" alt=""/>
+                <a href="javascript:;">坝上秋色之金色草原</a>
+            </div>
+        </div>
+        <div class="xiao">
+            <img src="img/31.jpg" alt="" title="秋意浓，十月寒天之坝上行摄记"/>
+            <div class="zi">
+                <img src="img/a9.bmp" alt=""/>
+                <a href="javascript:;">秋意浓，十月寒天之坝上行摄记</a>
+            </div>
+        </div>
+        <div class="xiao">
+            <img src="img/32.jpg" alt="" title="历史的召唤 开平第一楼"/>
+            <div class="zi">
+                <img src="img/a10.bmp" alt=""/>
+                <a href="javascript:;">历史的召唤 开平第一楼</a>
+            </div>
+        </div>
+        <div class="xiao">
+            <img src="img/33.jpg" alt="" title="天津黄崖关 · 看津城最红叶"/>
+            <div class="zi">
+                <img src="img/a11.bmp" alt=""/>
+                <a href="javascript:;">天津黄崖关 · 看津城最红叶</a>
+            </div>
+        </div>
+        <div class="xiao">
+            <img src="img/34.jpg" alt="" title="红叶漫深秋 忘情仙台山"/>
+            <div class="zi">
+                <img src="img/a12.bmp" alt=""/>
+                <a href="javascript:;">红叶漫深秋 忘情仙台山</a>
+            </div>
+        </div>
+        <div class="xiao">
+            <img src="img/35.jpg" alt="" title="井陉古镇，被“驴友”热捧的文化古镇"/>
+            <div class="zi">
+                <img src="img/a3.bmp" alt=""/>
+                <a href="javascript:;">井陉古镇，被“驴友”热捧的文化古镇</a>
+            </div>
+        </div>
+        <div class="xiao">
+            <img src="img/36.jpg" alt="" title="北方的小黄山---白石山"/>
+            <div class="zi">
+                <img src="img/a5.bmp" alt=""/>
+                <a href="javascript:;">北方的小黄山---白石山</a>
+            </div>
+        </div>
+        <div class="xiao">
+            <img src="img/37.jpg" alt="" title="光合谷温泉度假酒店——百名达人游天津"/>
+            <div class="zi">
+                <img src="img/a6.bmp" alt=""/>
+                <a href="javascript:;">光合谷温泉度假酒店——百名达人游天津</a>
+            </div>
+        </div>
+        <div class="xiao">
+            <img src="img/38.jpg" alt="" title="盘山——百名达人游天津"/>
+            <div class="zi">
+                <img src="img/a1.bmp" alt=""/>
+                <a href="javascript:;">盘山——百名达人游天津</a>
+            </div>
+        </div>
+        <div class="xiao">
+            <img src="img/39.jpg" alt="" title="毛家峪——百名达人游天"/>
+            <div class="zi">
+                <img src="img/a9.bmp" alt=""/>
+                <a href="javascript:;">毛家峪——百名达人游天</a>
+            </div>
+        </div>
+        <div class="xiao">
+            <img src="img/40.jpg" alt="" title="一路来到中国三大古代石窟之一云冈石窟"/>
+            <div class="zi">
+                <img src="img/a7.bmp" alt=""/>
+                <a href="javascript:;">一路来到中国三大古代石窟之一云冈石窟</a>
+            </div>
+        </div>
+        <div class="xiao">
+            <img src="img/41.jpg" alt="" title="独乐寺——百名达人游天津"/>
+            <div class="zi">
+                <img src="img/a14.bmp" alt=""/>
+                <a href="javascript:;">独乐寺——百名达人游天津</a>
+            </div>
+        </div>
+        <div class="xiao">
+            <img src="img/42.jpg" alt="" title="天津之眼——百名达人游天津"/>
+            <div class="zi">
+                <img src="img/a15.bmp" alt=""/>
+                <a href="javascript:;">天津之眼——百名达人游天津</a>
+            </div>
+        </div>
+        <div class="xiao">
+            <img src="img/43.jpg" alt="" title="瑞吉金融街酒店——百名达人游天津"/>
+            <div class="zi">
+                <img src="img/a13.bmp" alt=""/>
+                <a href="javascrip:;">瑞吉金融街酒店——百名达人游天津</a>
+            </div>
+        </div>
+        <div class="xiao">
+            <img src="img/44.jpg" alt="" title="渔阳宾馆午宴——百名达人游天津"/>
+            <div class="zi">
+                <img src="img/a16.bmp" alt=""/>
+                <a href="javascript:;">渔阳宾馆午宴——百名达人游天津</a>
+            </div>
+        </div>
+        <div class="xiao">
+            <img src="img/100.jpg" alt="" title="黄崖关长城——百名达人游天津"/>
+            <div class="zi">
+                <img src="img/a17.bmp" alt=""/>
+                <a href="javascript:;">黄崖关长城——百名达人游天津</a>
+            </div>
+        </div>
+        <div class="xiao">
+            <img src="img/46.jpg" alt="" title="秋景如画般的障石岩"/>
+            <div class="zi">
+                <img src="img/a1.bmp" alt=""/>
+                <a href="javascript:;">秋景如画般的障石岩</a>
+            </div>
+        </div>
+        <div class="xiao">
+            <img src="img/47.jpg" alt="" title="雪中游览保定涿州影视城"/>
+            <div class="zi">
+                <img src="img/a17.bmp" alt=""/>
+                <a href="javascript:;">雪中游览保定涿州影视城</a>
+            </div>
+        </div>
+        <div class="xiao">
+            <img src="img/48.jpg" alt="" title="潘家口"/>
+            <div class="zi">
+                <img src="img/a18.bmp" alt=""/>
+                <a href="javascript:;">潘家口</a>
+            </div>
+        </div>
+        <div class="xiao">
+            <img src="img/49.jpg" alt="" title="野三坡美食"/>
+            <div class="zi">
+                <img src="img/a19.bmp" alt=""/>
+                <a href="javascript:;">野三坡美食</a>
+            </div>
+        </div>
+        <div class="xiao">
+            <img src="img/50.jpg" alt="" title="探索者名将军团真人CS"/>
+            <div class="zi">
+                <img src="img/a20.bmp" alt=""/>
+                <a href="javascript:;">探索者名将军团真人CS</a>
+            </div>
+        </div>
+        <div class="xiao">
+            <img src="img/51.jpg" alt="" title="去草原不能错过的事情"/>
+            <div class="zi">
+                <img src="img/a21.bmp" alt=""/>
+                <a href="javascript:;">去草原不能错过的事情</a>
+            </div>
+        </div>
+        <div class="xiao">
+            <img src="img/52.jpg" alt="" title="实用性攻略之坝上——草原王国"/>
+            <div class="zi">
+                <img src="img/a22.bmp" alt=""/>
+                <a href="javascript:;">实用性攻略之坝上——草原王国</a>
+            </div>
+        </div>
+        <div class="xiao">
+            <img src="img/53.jpg" alt="" title="美丽三坡多彩风情"/>
+            <div class="zi">
+                <img src="img/a23.bmp" alt=""/>
+                <a href="javascript:;">美丽三坡多彩风情</a>
+            </div>
+        </div>
+        <div class="xiao">
+            <img src="img/54.jpg" alt="" title="秋日白石山 · 玻璃栈道上的笑声"/>
+            <div class="zi">
+                <img src="img/a24.bmp" alt=""/>
+                <a href="javascript:;">秋日白石山 · 玻璃栈道上的笑声</a>
+            </div>
+        </div>
+    </div>
+
+</div>
+<div class="return-top" id="j_returnTop">
+
+</div>
+
+<!--<div class="footer">-->
+    <!--<div class="w clearfix">-->
+        <!--<dl>-->
+            <!--<dt><a href="#">关于我们</a></dt>-->
+            <!--<dd><a href="#">这里介绍</a></dd>-->
+            <!--<dd><a href="#">招贤纳士</a></dd>-->
+            <!--<dd><a href="#">网站荣誉</a></dd>-->
+            <!--<dd><a href="#">联系我们</a></dd>-->
+        <!--</dl>-->
+
+        <!--<dl>-->
+            <!--<dt><a href="#">商家服务</a></dt>-->
+            <!--<dd><a href="#">这里营销</a></dd>-->
+            <!--<dd><a href="#">商家登陆</a></dd>-->
+        <!--</dl>-->
+        <!--<dl>-->
+            <!--<dt><a href="#">新手上路</a></dt>-->
+            <!--<dd><a href="#">预订帮助</a></dd>-->
+            <!--<dd><a href="#">服务条款</a></dd>-->
+            <!--<dd><a href="#">版权声明</a></dd>-->
+        <!--</dl>-->
+        <!--<dl>-->
+            <!--<dt><a href="#">合作伙伴</a></dt>-->
+            <!--<dd><a href="#">国家旅游局</a></dd>-->
+            <!--<dd><a href="#">人民网旅游</a></dd>-->
+            <!--<dd><a href="#">光明网旅游</a></dd>-->
+            <!--<dd><a href="#">央视网旅游</a></dd>-->
+            <!--<dd><a href="#">中国日报网</a></dd>-->
+        <!--</dl>-->
+
+        <!--<div class="footer-shoucang fr">-->
+            <!--<div class="shoucang-left fl">-->
+                <!--<p>关注我们</p>-->
+
+                <!--<div>-->
+
+                <!--</div>-->
+            <!--</div>-->
+            <!--<div class="shoucang-right fr">-->
+                <!--<p>用微信收藏这里</p>-->
+                <!--<img src="images/vcode1-1.jpg"/>-->
+            <!--</div>-->
+        <!--</div>-->
+
+    <!--</div>-->
+    <!--<div class="ft-bottom clearfix">-->
+        <!--<div class="w footer-bottom">-->
+            <!--<div></div>-->
+            <!--<span></span>-->
+        <!--</div>-->
+    <!--</div>-->
+
+<!--</div>-->
+
+</body>
+</html>
